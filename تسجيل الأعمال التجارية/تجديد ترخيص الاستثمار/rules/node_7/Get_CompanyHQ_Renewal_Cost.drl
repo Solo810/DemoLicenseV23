@@ -7,6 +7,7 @@
 	classification is "Silver"
 	and has_HQ_In_KSA 
 	and renewal_Year is more than 1
+    and entrepreneur is false 
 then
 	set decision to a new decision_result where
 		the amount is 2000 , 

@@ -66,6 +66,7 @@
         <module>.decisionservice</module>
         <module>decision_result</module>
         <module>إصدار ترخيص الاستثمار</module>
+        <module>تجديد ترخيص الاستثمار</module>
     </modules>
 
     <build>
