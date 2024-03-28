@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Get Eligibility</name>
+  <uuid>50e9af3d-0112-4cc8-93ff-48f4f234738b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	ProActivity is false and numberOfYears is more than 0 
+then
+	set decision to a new decision_result where
+		the amount is 0, 
+		the msg is "الاشتراك في الغرفة التجارية" ;
+else
+	set decision to a new decision_result where
+		the amount is -1 , 
+		the msg is "لا تظهر للأنشطة المهنية" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
