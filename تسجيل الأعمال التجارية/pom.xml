@@ -64,9 +64,12 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
+        <module>company_type</module>
         <module>decision_result</module>
+        <module>إصدار السجل التجاري</module>
         <module>إصدار ترخيص الاستثمار</module>
         <module>تجديد ترخيص الاستثمار</module>
+        <module>شروط ظهور الخدمة الرئيسية</module>
     </modules>
 
     <build>
