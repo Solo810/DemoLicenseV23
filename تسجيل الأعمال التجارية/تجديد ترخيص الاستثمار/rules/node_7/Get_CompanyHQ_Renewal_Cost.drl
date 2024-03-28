@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Get_CompanyHQ_Renewal_Cost</name>
+  <uuid>47f40a7e-5547-4c5c-bdc6-b596371b4e58</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	classification is "Silver"
+	and has_HQ_In_KSA 
+	and renewal_Year is more than 1
+then
+	set decision to a new decision_result where
+		the amount is 2000 , 
+		the msg is "تكلفة تجديد ترخيص الاستثمار المنشأة تعمل بصفتها مقراً إقليمياً في المملكة ومصنفة فضية " ;
+else 
+	set decision to a new decision_result where
+		the amount is 0 , 
+		the msg is "التجديد مجاني ترخيص الاستثمار المنشأة تعمل بصفتها مقراً إقليمياً في المملكة ومصنفة الذهبية والبلاتينية" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

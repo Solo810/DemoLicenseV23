@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="تجديد ترخيص الاستثمار">
+  <name>تجديد_ترخيص_الاستثمار</name>
+  <uuid>9d0e932b-14b2-4749-aa1e-8f765754db6f</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#486eeefd-4bd0-4478-8d7b-c44f415b731c"/>
+  <targetRuleProject href="../../%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF%20%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1#7fe6fc07-7206-4da1-9a3f-90744126531a"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
