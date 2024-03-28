@@ -4,7 +4,7 @@
   <uuid>e7c90706-d248-4cf6-bdca-86bf63b7d2fc</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
-	sharePercentage is less than 100 and ProActivity is false and numberOfYears is more than 1
+	sharePercentage is less than 100 and ProActivity is false and renewal_Year is more than 1
 then
 	set decision to a new decision_result where
 		the amount is 62000 , 

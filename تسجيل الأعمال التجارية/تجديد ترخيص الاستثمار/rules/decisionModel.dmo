@@ -20,7 +20,7 @@
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="java.lang.Double" collection="false" name="sharePercentage"/>
                 <input bomType="java.lang.Boolean" collection="false" name="ProActivity"/>
-                <input bomType="java.lang.Double" collection="false" name="numberOfYears"/>
+                <input bomType="java.lang.Double" collection="false" name="renewal_Year"/>
                 <output bomType="cp4admin.sdaia_business_cal._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Eligibility for the Service"/>
                 <rule defaultRule="false" href="node_1/Eligibility%20for%20the%20Service.drl" kind="BusinessRule" name="Eligibility for the Service"/>
             </ruleset>
@@ -33,7 +33,7 @@
             <requiredInput href="#node_2"/>
         </informationRequirement>
         <informationRequirement>
-            <requiredInput href="#node_3"/>
+            <requiredInput href="#node_8"/>
         </informationRequirement>
     </decision>
     <inputData id="node_2" name="ProActivity">
@@ -43,14 +43,6 @@
             </initialization>
         </extensionElements>
         <variable id="node_2_ii" name="ProActivity" typeRef="java.lang.Boolean"/>
-    </inputData>
-    <inputData id="node_3" name="numberOfYears">
-        <extensionElements>
-            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.Double" collection="false" name="numberOfYears"/>
-            </initialization>
-        </extensionElements>
-        <variable id="node_3_ii" name="numberOfYears" typeRef="java.lang.Double"/>
     </inputData>
     <inputData id="node_4" name="classification">
         <extensionElements>
@@ -78,7 +70,7 @@
     </inputData>
     <decision id="node_7" name="Get Final Cost">
         <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
                 <input bomType="cp4admin.sdaia_business_cal._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Eligibility for the Service"/>
                 <input bomType="java.lang.String" collection="false" name="classification"/>
                 <input bomType="java.lang.Boolean" collection="false" name="has_HQ_In_KSA"/>
