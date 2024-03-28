@@ -68,6 +68,7 @@
         <module>decision_result</module>
         <module>إصدار السجل التجاري</module>
         <module>إصدار ترخيص الاستثمار</module>
+        <module>الاشتراك في الغرفة التجارية</module>
         <module>تجديد ترخيص الاستثمار</module>
         <module>شروط ظهور الخدمة الرئيسية</module>
     </modules>
