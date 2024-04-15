@@ -33,11 +33,16 @@
     </inputData>
     <decision id="node_7" name="Get Final Cost">
         <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
                 <input bomType="java.lang.Boolean" collection="false" name="entrepreneur"/>
                 <input bomType="java.lang.Boolean" collection="false" name="Has HQ in KSA"/>
                 <input bomType="java.lang.String" collection="false" name="classification"/>
+                <input bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Eligibility for the Service"/>
+                <input bomType="java.lang.Double" collection="false" name="renewal_Year"/>
                 <output bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Get Final Cost"/>
+                <rule defaultRule="false" href="node_7/Get_Company_Eligibility.drl" kind="BusinessRule" name="Get_Company_Eligibility"/>
+                <rule defaultRule="false" href="node_7/Get_Renewal_License_Entrepreneur.dmt" kind="DecisionTable" name="Get_Renewal_License_Entrepreneur"/>
+                <rule defaultRule="false" href="node_7/Get_CompanyHQ_Renewal_Cost.drl" kind="BusinessRule" name="Get_CompanyHQ_Renewal_Cost"/>
             </ruleset>
         </extensionElements>
         <variable id="node_7_ii" name="Get Final Cost" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result"/>
@@ -50,37 +55,58 @@
         <informationRequirement>
             <requiredInput href="#node_6"/>
         </informationRequirement>
-        <knowledgeRequirement>
-            <requiredKnowledge href="#node_8"/>
-        </knowledgeRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_12"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_11"/>
+        </informationRequirement>
     </decision>
-    <businessKnowledgeModel id="node_8" name="شروط ظهور الخدمة الرئيسية">
+    <inputData id="node_9" name="sharePercentage">
         <extensionElements>
-            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <property name="ads.designer.bkKind"><![CDATA[decision]]></property>
-            </properties>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="sharePercentage"/>
+            </initialization>
         </extensionElements>
-        <variable name="شروط ظهور الخدمة الرئيسية" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result"/>
-        <encapsulatedLogic typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result">
-            <formalParameter name="professional" typeRef="java.lang.Boolean"/>
-            <formalParameter name="numberOfYears" typeRef="java.lang.Double"/>
-            <formalParameter name="sharePercentage" typeRef="java.lang.Double"/>
-            <context>
-                <contextEntry>
-                    <variable name="class"/>
-                    <literalExpression>
-                        <text>"ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629._0x06340x06310x06480x06370x06380x06470x06480x06310x06270x06440x062e0x062f0x06450x06290x06270x06440x06310x06260x064a0x06330x064a0x0629.شروط_ظهور_الخدمة_الرئيسية"</text>
-                    </literalExpression>
-                </contextEntry>
-                <contextEntry>
-                    <variable name="method signature"/>
-                    <literalExpression>
-                        <text>"run(java.lang.Boolean,java.lang.Double,java.lang.Double)"</text>
-                    </literalExpression>
-                </contextEntry>
-            </context>
-        </encapsulatedLogic>
-    </businessKnowledgeModel>
+        <variable id="node_9_ii" name="sharePercentage" typeRef="java.lang.Double"/>
+    </inputData>
+    <inputData id="node_10" name="professional">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Boolean" collection="false" name="professional"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_10_ii" name="professional" typeRef="java.lang.Boolean"/>
+    </inputData>
+    <inputData id="node_11" name="renewal_Year">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="renewal_Year"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_11_ii" name="renewal_Year" typeRef="java.lang.Double"/>
+    </inputData>
+    <decision id="node_12" name="Eligibility for the Service">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Double" collection="false" name="renewal_Year"/>
+                <input bomType="java.lang.Boolean" collection="false" name="professional"/>
+                <input bomType="java.lang.Double" collection="false" name="sharePercentage"/>
+                <output bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Eligibility for the Service"/>
+                <rule defaultRule="false" href="node_12/Eligibility%20for%20the%20Service.drl" kind="BusinessRule" name="Eligibility for the Service"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_12_ii" name="Eligibility for the Service" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result"/>
+        <informationRequirement>
+            <requiredInput href="#node_11"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_10"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_9"/>
+        </informationRequirement>
+    </decision>
 </definitions>
 </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
