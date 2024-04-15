@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="إصدار ترخيص الاستثمار">
+  <name>إصدار-ترخيص-الاستثمار</name>
+  <uuid>1ac29533-8f50-404a-9376-9271e9b872d3</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#743928a2-49e1-4d74-9e4a-44c8bc510bd1"/>
+  <targetRuleProject href="../../%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1#1a9db188-e021-4736-880b-999e44c78a95"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
