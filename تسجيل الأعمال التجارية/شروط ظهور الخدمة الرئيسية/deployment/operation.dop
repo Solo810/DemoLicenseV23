@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="شروط ظهور الخدمة الرئيسية">
+  <name>شروط-ظهور-الخدمة-الرئيسية</name>
+  <uuid>cd65ff31-976e-4be1-acb2-895bd5640d53</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#d9190066-7928-4b67-8da0-f8e80f92b464"/>
+  <targetRuleProject href="../../%D8%B4%D8%B1%D9%88%D8%B7%20%D8%B8%D9%87%D9%88%D8%B1%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9#e5427fec-5c1a-4249-8ced-880d107bed38"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
