@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="إصدار السجل التجاري">
-  <name>إصدار_السجل_التجاري</name>
-  <uuid>6055d92e-5baa-476d-a361-032a712a1301</uuid>
-  <decisionModel href="../rules/decisionModel.dmo#f4229fb7-b859-4de8-8697-fa5cfd04fe56"/>
-  <targetRuleProject href="../../%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B3%D8%AC%D9%84%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A#99e271ee-7fa8-4912-b319-afce11700575"/>
-</com.ibm.rules.studio.model.decisionservice:Operation>

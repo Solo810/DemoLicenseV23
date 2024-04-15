@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cp4admin.sdaia_business_cal._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629</groupId>
+    <groupId>ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629</groupId>
     <artifactId>0x062a0x06330x062c0x064a0x06440x06270x06440x06230x06390x06450x06270x06440x06270x06440x062a0x062c0x06270x06310x064a0x0629</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>تسجيل الأعمال التجارية</name>
@@ -9,11 +9,11 @@
     <packaging>pom</packaging>
 
     <properties>
-        <ads-mojo.version>12.0.3</ads-mojo.version>
+        <ads-mojo.version>11.0.12.1</ads-mojo.version>
         <buildTime>${maven.build.timestamp}</buildTime>
         <decisionServiceId>${project.groupId}:${project.artifactId}</decisionServiceId>
         <engine-api.version>3.1.0</engine-api.version>
-        <engine-compact-runtime.version>3.1.9</engine-compact-runtime.version>
+        <engine-compact-runtime.version>3.1.6</engine-compact-runtime.version>
         <jackson.version>2.15.0</jackson.version>
         <junit.jupiter.version>5.8.0</junit.jupiter.version>
         <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
@@ -23,7 +23,7 @@
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <ml-integration-runtime.version>48.0.5</ml-integration-runtime.version>
+        <ml-integration-runtime.version>44.0.7</ml-integration-runtime.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -63,14 +63,8 @@
         </dependencies>
     </dependencyManagement>
     <modules>
+        <module>Company_type</module>
         <module>.decisionservice</module>
-        <module>company_type</module>
-        <module>decision_result</module>
-        <module>إصدار السجل التجاري</module>
-        <module>إصدار ترخيص الاستثمار</module>
-        <module>الاشتراك في الغرفة التجارية</module>
-        <module>تجديد ترخيص الاستثمار</module>
-        <module>شروط ظهور الخدمة الرئيسية</module>
     </modules>
 
     <build>
