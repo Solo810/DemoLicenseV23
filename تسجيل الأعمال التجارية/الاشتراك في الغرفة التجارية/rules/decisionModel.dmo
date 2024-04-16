@@ -55,26 +55,18 @@
     <inputData id="node_4" name="Capital amount">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.String" collection="false" name="Capital amount"/>
+                <output bomType="java.lang.Double" collection="false" name="Capital amount"/>
             </initialization>
         </extensionElements>
-        <variable id="node_4_ii" name="Capital amount" typeRef="java.lang.String"/>
+        <variable id="node_4_ii" name="Capital amount" typeRef="java.lang.Double"/>
     </inputData>
-    <inputData id="node_5" name="non Saudi Count">
+    <inputData id="node_5" name="Number of Employees">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.Double" collection="false" name="non Saudi Count"/>
+                <output bomType="java.lang.Double" collection="false" name="Number of Employees"/>
             </initialization>
         </extensionElements>
-        <variable id="node_5_ii" name="non Saudi Count" typeRef="java.lang.Double"/>
-    </inputData>
-    <inputData id="node_6" name="Saudi">
-        <extensionElements>
-            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.Boolean" collection="false" name="Saudi"/>
-            </initialization>
-        </extensionElements>
-        <variable id="node_6_ii" name="Saudi" typeRef="java.lang.Boolean"/>
+        <variable id="node_5_ii" name="Number of Employees" typeRef="java.lang.Double"/>
     </inputData>
     <inputData id="node_7" name="Company_type">
         <extensionElements>
@@ -84,17 +76,28 @@
         </extensionElements>
         <variable id="node_7_ii" name="Company_type" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type"/>
     </inputData>
-    <decision id="node_8" name="Company_Level">
+    <decision id="node_8" name="Cost Including VAT">
         <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="java.lang.String" collection="false" name="Capital amount"/>
-                <input bomType="java.lang.Double" collection="false" name="non Saudi Count"/>
-                <input bomType="java.lang.Boolean" collection="false" name="Saudi"/>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
+                <input bomType="java.lang.Double" collection="false" name="Years"/>
+                <input bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Eligibility for the Service"/>
+                <input bomType="java.lang.Double" collection="false" name="Capital amount"/>
+                <input bomType="java.lang.Double" collection="false" name="Number of Employees"/>
                 <input bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type" collection="false" name="Company_type"/>
-                <output bomType="java.lang.String" collection="false" name="Company_Level"/>
+                <input bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_grade.Company_Grade" collection="false" name="Company Grade"/>
+                <output bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Cost Including VAT"/>
+                <rule defaultRule="false" href="node_8/No%20Eligible.drl" kind="BusinessRule" name="No Eligible"/>
+                <rule defaultRule="false" href="node_8/Cost%20Including%20VAT%200.drl" kind="BusinessRule" name="Cost Including VAT 0"/>
+                <rule defaultRule="false" href="node_8/Get%20Cost%20Including%20VAT.dmt" kind="DecisionTable" name="Get Cost Including VAT"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_8_ii" name="Company_Level" typeRef="java.lang.String"/>
+        <variable id="node_8_ii" name="Cost Including VAT" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
         <informationRequirement>
             <requiredInput href="#node_4"/>
         </informationRequirement>
@@ -102,12 +105,20 @@
             <requiredInput href="#node_5"/>
         </informationRequirement>
         <informationRequirement>
-            <requiredInput href="#node_6"/>
-        </informationRequirement>
-        <informationRequirement>
             <requiredInput href="#node_7"/>
         </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_9"/>
+        </informationRequirement>
     </decision>
+    <inputData id="node_9" name="Company Grade">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_grade.Company_Grade" collection="false" name="Company Grade"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_9_ii" name="Company Grade" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_grade.Company_Grade"/>
+    </inputData>
 </definitions>
 </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

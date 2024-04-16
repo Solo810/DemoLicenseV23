@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Cost Including VAT 0</name>
+  <uuid>a63a4482-48b8-49f3-b3cd-28d234386cda</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	Years is less than 4 
+	and the amount of 'Eligibility for the Service' is more than 0
+then
+	set decision to a new Decision_result where
+		the amount is 0 , 
+		the msg is "الاشتراك مجاني في السنوات 1 و2 و3" + "عدد سنوات العمل" + Years ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
