@@ -11,6 +11,6 @@
     <value><![CDATA["Sleem_\u0625\u0635\u062F\u0627\u0631-\u0627\u0644\u0631\u062E\u0635\u0629-\u0627\u0644\u062A\u0634\u063A\u064A\u0644\u064A\u0629"]]></value>
   </tags>
   <tags key="exposedAtRuntime">
-    <value><![CDATA[false]]></value>
+    <value><![CDATA[true]]></value>
   </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
