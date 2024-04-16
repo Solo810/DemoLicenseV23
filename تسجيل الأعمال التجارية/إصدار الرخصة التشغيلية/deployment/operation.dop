@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="إصدار الرخصة التشغيلية">
+  <name>إصدار-الرخصة-التشغيلية</name>
+  <uuid>f3c8eece-110c-4443-a8b6-ea833f8fc2bd</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#250b0975-fe7e-42be-a199-69b343c48abf"/>
+  <targetRuleProject href="../../%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B1%D8%AE%D8%B5%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84%D9%8A%D8%A9#1878ea02-b12b-4275-b549-5784e37383f9"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
