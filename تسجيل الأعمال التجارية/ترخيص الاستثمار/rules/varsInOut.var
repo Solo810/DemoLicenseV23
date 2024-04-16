@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" language="ARL">
-  <name>varsInOut</name>
-  <uuid>6e7559e2-5a6e-42ee-b7cc-2bd21b548362</uuid>
-  <variables name="decision_result" type="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" initialValue="" verbalization="decision_result" jsonName=""/>
-  <variables name="professional" type="boolean" initialValue="" verbalization="professional" jsonName=""/>
-  <variables name="year" type="double" initialValue="" verbalization="year" jsonName=""/>
-  <variables name="sharePercentage" type="double" initialValue="" verbalization="sharePercentage" jsonName=""/>
-</ilog.rules.studio.model.base:VariableSet>

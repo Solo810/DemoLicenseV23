@@ -65,16 +65,15 @@
     <modules>
         <module>Amount_VAT</module>
         <module>تجديد ترخيص الاستثمار</module>
-        <module>ترخيص الاستثمار</module>
-        <module>إصدار ترخيص الاستثمار</module>
-        <module>إصدار السجل التجاري</module>
-        <module>الاشتراك في الغرفة التجارية</module>
         <module>Company_type</module>
         <module>Company_Grade</module>
         <module>إصدار الرخصة التشغيلية</module>
         <module>شروط ظهور الخدمة الرئيسية</module>
+        <module>إصدار ترخيص الاستثمار</module>
         <module>Decision_result</module>
         <module>.decisionservice</module>
+        <module>إصدار السجل التجاري</module>
+        <module>الاشتراك في الغرفة التجارية</module>
     </modules>
 
     <build>
