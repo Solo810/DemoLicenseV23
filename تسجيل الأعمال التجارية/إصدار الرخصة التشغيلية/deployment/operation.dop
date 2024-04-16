@@ -4,4 +4,13 @@
   <uuid>f3c8eece-110c-4443-a8b6-ea833f8fc2bd</uuid>
   <decisionModel href="../rules/decisionModel.dmo#250b0975-fe7e-42be-a199-69b343c48abf"/>
   <targetRuleProject href="../../%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B1%D8%AE%D8%B5%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84%D9%8A%D8%A9#1878ea02-b12b-4275-b549-5784e37383f9"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Sleem_\u0625\u0635\u062F\u0627\u0631-\u0627\u0644\u0631\u062E\u0635\u0629-\u0627\u0644\u062A\u0634\u063A\u064A\u0644\u064A\u0629"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>

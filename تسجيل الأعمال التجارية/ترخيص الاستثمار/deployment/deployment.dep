@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629:0x062a0x06310x062e0x064a0x06350x06270x06440x06270x06330x062a0x062b0x06450x06270x0631" ruleAppVersion="LATEST-SNAPSHOT" packageName="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629._0x062a0x06310x062e0x064a0x06350x06270x06440x06270x06330x062a0x062b0x06450x06270x0631" managingXom="true">
+  <name>ترخيص-الاستثمار</name>
+  <uuid>eed678c7-4b29-4076-8411-008cf229a368</uuid>
+  <locales>en_US</locales>
+  <operations operationName="ترخيص-الاستثمار">
+    <operation href="%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1.dop#ab180b98-1bc1-4c1f-92bd-b74027b8be17"/>
+    <properties key="ruleset.version">
+      <value><![CDATA[1.0]]></value>
+    </properties>
+  </operations>
+  <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">
+    <description><![CDATA[Updates the minor version for each ruleset. Makes the new version available but retains previous versions.]]></description>
+  </versionPolicies>
+  <versionPolicies label="Use the base version numbers" recurrent="true">
+    <description><![CDATA[Uses the numbers provided in the deployment configuration. Replaces the latest version of each ruleset with this release. Used for hot fixes or development.]]></description>
+  </versionPolicies>
+  <versionPolicies label="The user can define the version numbers" ruleset="MANUAL" recurrent="true">
+    <description><![CDATA[Allows you to enter your own version numbers. Used for hot fixes or updates to an earlier release.]]></description>
+  </versionPolicies>
+</com.ibm.rules.studio.model.decisionservice:Deployment>

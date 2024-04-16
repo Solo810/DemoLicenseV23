@@ -1,0 +1,26 @@
+
+package ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.amount_vat;
+
+
+class Amount_VAT
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Amount_VAT"
+        #de.generated
+{
+    double VAT
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "VAT"
+                #update;
+    double amount_VAT
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "amount_VAT"
+                #update;
+    Amount_VAT(double VAT, double amount_VAT)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Amount_VAT()
+                #dataio.default;
+}
+

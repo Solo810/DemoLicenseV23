@@ -10,11 +10,15 @@ class Company_type
 {
     domain 
     {
+        static جميعالشركات,
+        static جميعالمؤسسات,
+        static جميعالمنشآت,
         static شركةتضامنية,
         static شركةتوصيةبسيطة,
         static شركةذاتمسؤوليةمحدودة,
         static شركةمساهمةغيرمدرجة,
         static شركةمساهمةمبسطة,
+        static شركةمساهمةمدرجةفيالسوقالمالية,
         static شركةمهنيةتضامنية,
         static شركةمهنيةتوصيةبسيطة,
         static شركةمهنيةذاتمسؤوليةمحدودة,
@@ -22,6 +26,15 @@ class Company_type
         static شركةمهنيةمساهمةمبسطة,
         static مؤسسةفردية
     }
+    static final readonly ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type جميعالشركات
+                property ads.attributeId "15"
+                property com.fasterxml.jackson.annotation.JsonProperty "جميعالشركات";
+    static final readonly ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type جميعالمؤسسات
+                property ads.attributeId "14"
+                property com.fasterxml.jackson.annotation.JsonProperty "جميعالمؤسسات";
+    static final readonly ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type جميعالمنشآت
+                property ads.attributeId "13"
+                property com.fasterxml.jackson.annotation.JsonProperty "جميعالمنشآت";
     static final readonly ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type شركةتضامنية
                 property ads.attributeId "11"
                 property com.fasterxml.jackson.annotation.JsonProperty "شركةتضامنية";
@@ -37,6 +50,9 @@ class Company_type
     static final readonly ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type شركةمساهمةمبسطة
                 property ads.attributeId "7"
                 property com.fasterxml.jackson.annotation.JsonProperty "شركةمساهمةمبسطة";
+    static final readonly ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type شركةمساهمةمدرجةفيالسوقالمالية
+                property ads.attributeId "12"
+                property com.fasterxml.jackson.annotation.JsonProperty "شركةمساهمةمدرجةفيالسوقالمالية";
     static final readonly ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type شركةمهنيةتضامنية
                 property ads.attributeId "6"
                 property com.fasterxml.jackson.annotation.JsonProperty "شركةمهنيةتضامنية";

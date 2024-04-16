@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="ترخيص-الاستثمار" usingRuleflow="true" ruleflowName="get eligibility" targetRuleProjectName="ترخيص الاستثمار">
+  <name>ترخيص-الاستثمار</name>
+  <uuid>ab180b98-1bc1-4c1f-92bd-b74027b8be17</uuid>
+  <ruleflow href="../rules/get%20eligibility.rfl#8f348216-241a-4438-8e64-046f399f934e"/>
+  <targetRuleProject href="../../%D8%AA%D8%B1%D8%AE%D9%8A%D8%B5%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1#8378d639-988b-4300-b201-87d4762c03de"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
