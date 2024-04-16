@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="الاشتراك في الغرفة التجارية">
+  <name>الاشتراك-في-الغرفة-التجارية</name>
+  <uuid>d22228fd-fa39-490d-82f4-10d5b62722f4</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#0709002f-1554-49f1-88a9-d269e2a02205"/>
+  <targetRuleProject href="../../%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%BA%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9#42f05921-1b7d-4884-b786-aaa7eabd4450"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

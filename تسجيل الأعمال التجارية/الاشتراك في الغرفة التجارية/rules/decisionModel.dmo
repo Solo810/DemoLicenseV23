@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>0709002f-1554-49f1-88a9-d269e2a02205</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Years">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="Years"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Years" typeRef="java.lang.Double"/>
+    </inputData>
+    <decision id="node_1" name="Eligibility for the Service">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Double" collection="false" name="Years"/>
+                <input bomType="java.lang.Boolean" collection="false" name="professional"/>
+                <input bomType="java.lang.Double" collection="false" name="sharePercentage"/>
+                <output bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result" collection="false" name="Eligibility for the Service"/>
+                <rule defaultRule="false" href="node_1/Get%20Eligibility.drl" kind="BusinessRule" name="Get Eligibility"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Eligibility for the Service" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.decision_result.Decision_result"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="professional">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Boolean" collection="false" name="professional"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="professional" typeRef="java.lang.Boolean"/>
+    </inputData>
+    <inputData id="node_3" name="sharePercentage">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="sharePercentage"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="sharePercentage" typeRef="java.lang.Double"/>
+    </inputData>
+    <inputData id="node_4" name="Capital amount">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="Capital amount"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="Capital amount" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_5" name="non Saudi Count">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="non Saudi Count"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_5_ii" name="non Saudi Count" typeRef="java.lang.Double"/>
+    </inputData>
+    <inputData id="node_6" name="Saudi">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Boolean" collection="false" name="Saudi"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_6_ii" name="Saudi" typeRef="java.lang.Boolean"/>
+    </inputData>
+    <inputData id="node_7" name="Company_type">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type" collection="false" name="Company_type"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_7_ii" name="Company_type" typeRef="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type"/>
+    </inputData>
+    <decision id="node_8" name="Company_Level">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="Capital amount"/>
+                <input bomType="java.lang.Double" collection="false" name="non Saudi Count"/>
+                <input bomType="java.lang.Boolean" collection="false" name="Saudi"/>
+                <input bomType="ahmed.sleem_ibm.com.sleem_sdaia_license._0x062a0x06330x062c0x064a0x0644_0x06270x06440x06230x06390x06450x06270x0644_0x06270x06440x062a0x062c0x06270x06310x064a0x0629.company_type.Company_type" collection="false" name="Company_type"/>
+                <output bomType="java.lang.String" collection="false" name="Company_Level"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_8_ii" name="Company_Level" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_7"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

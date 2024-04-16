@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Get Eligibility</name>
+  <uuid>d88d92c1-27f5-48db-b0f3-372047ce8520</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+ professional is false 
+then
+	set decision to a new Decision_result where
+		the amount is 0, 
+		the msg is "الاشتراك في الغرفة التجارية" ;
+else
+	set decision to a new Decision_result where
+		the amount is -1 , 
+		the msg is "لا تظهر للأنشطة المهنية" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
